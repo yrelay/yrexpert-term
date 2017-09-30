@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Yrelay/yrexpert-Term.git"
+    "url": "git://github.com/yrelay/yrexpert-term.git"
   },
   "os": [
     "any"
@@ -31,6 +31,6 @@
     "postinstall": "node postinstall/install"
   },
   "bugs": {
-    "url": "https://github.com/yrelay/yrexpert-Term/issues"
+    "url": "https://github.com/yrelay/yrexpert-term/issues"
   }
 }
