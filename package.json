@@ -1,0 +1,36 @@
+{
+  "name": "yrexpert-term",
+  "description": "Terminal mode navigateur pour yrexpert-js...",
+  "version": "0.0.0",
+  "author": {
+    "name": "Yrelay",
+    "email": "info@yrelay.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Yrelay/yrexpert-Term.git"
+  },
+  "os": [
+    "any"
+  ],
+  "directories": {
+    "lib": "./lib/"
+  },
+  "main": "./lib/yrexpert-term.js",
+  "engines": {
+    "node": ">=0.2.2"
+  },
+  "dependencies": {
+    "socket.io": ">=0.9.6",
+    "term.js": ">=0.0.7"
+  },
+  "licenses": [
+    "GPL-3.0"
+  ],
+  "scripts": {
+    "postinstall": "node postinstall/install"
+  },
+  "bugs": {
+    "url": "https://github.com/yrelay/yrexpert-Term/issues"
+  }
+}

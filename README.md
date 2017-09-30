@@ -1,4 +1,4 @@
-![yexpert-logo.png](./images/yexpert-logo.png)
+![yrexpert-logo.png](./images/yexpert-logo.png)
 
 # Terminal mode navigateur pour Yexpert-JS...
  
