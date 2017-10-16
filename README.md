@@ -1,9 +1,11 @@
-![yrexpert-logo.png](./images/yexpert-logo.png)
+![yrexpert-logo.png](./images/yrexpert-logo.png)
 
-# Terminal mode navigateur pour Yexpert-JS...
- 
+# Terminal mode navigateur pour yrexpert-js...
+
+[![npm downloads][downloads-image]][downloads-url]
+
 Ce dépot contient :
-* un module back-end de Node.js fournisant une interface Web Sockets pour Yexpert.
+* un module back-end de Node.js fournisant une interface Web Sockets pour YRexpert.
 * un terminal JavaScript émulant VT-100 qui fonctionne dans la plupart des navigateurs.
 
 Ce dépot est basé sur [l'émulateur term.js de Christopher Jeffrey's ](https://github.com/chjj/term.js/),
@@ -18,7 +20,7 @@ Si vous êtes sur un système Linux type Debian, vous pouvez taper :
 ### Installation du serveur sur les autres distributions Linux
 
 Installer les dépendances que l'on aura besoin pour l’installation :
-Yrelay/Yexpert-Term
+yrelay/yrexpert-Term
 	~$ sudo apt-get install curl build-essential openssl libssl-dev
 
 Télécharger la dernière version de Node.js, la version v4.2.4 à ce jour ( [http://nodejs.org/download/](http://nodejs.org/download/) ) :
@@ -49,37 +51,37 @@ Si vous souhaitez désinstaller Node.js :
 
 	~$ make uninstall
 
-## 2. Installer le module Node.js Yexpert-Term et ses dépendences
+## 2. Installer le module Node.js yrexpert-term et ses dépendences
 
 	~$ mkdir ~/test
 	~$ cd ~/test	
-	~$ npm install yexpert-term
+	~$ npm install yrexpert-term
 
 Réponder au questions suivantes :
 
-* Installer Yexpert-Term vers le répertoire (/home/hamid/Yrelay/bas/yexpert-term):
+* Installer yrexpert-term vers le répertoire (/home/hamid/Yrelay/bas/yrexpert-term):
 * Voulez-vous installer des ressources supplémentaires à partir du répertoire /extras ?
-* Si vous êtes nouveau sur Yexpert-Term ou voulez créer un environnement de test, entrer Y
+* Si vous êtes nouveau sur yrexpert-term ou voulez créer un environnement de test, entrer Y
 * Si vous êtes un utilisateur expérimenté ou ceci est un environnement de production, entrer N
 * Entrer Y/N: 
 
 Lancer le serveur :
 
-	~$ cd yexpert-term
-	~$ node yexpert-termStart
+	~$ cd yrexpert-term
+	~$ node yrexpert-termStart
 
 ## 3. Démarrage de l'émulateur de terminal
 
-[http://localhost:8081/yrelay/yexpert-term/index.html](http://localhost:8081/yrelay/yexpert-term/index.html)
+[http://localhost:8081/yrelay/yrexpert-term/index.html](http://localhost:8081/yrelay/yrexpert-term/index.html)
 
 Remarque : spécifier l'adresse appropriée/IP et le port tel que configuré dans
-le fichier de démarrage `yexpert-termStart.js`.
+le fichier de démarrage `yrexpert-termStart.js`.
 
-## 4. Fonctionnement de Yexpert-Term
+## 4. Fonctionnement de yrexpert-term
 
 ### 4.1. Coté Serveur :
 
-	var term = require('yexpert-term');
+	var term = require('yrexpert-term');
 
 	term.start({
 	...
@@ -114,7 +116,7 @@ le fichier de démarrage `yexpert-termStart.js`.
 
 	      term.open(document.body);
 
-	      term.write('\x1b[31mBienvenue sur le terminal Yexpert !\x1b[m\r\n');
+	      term.write('\x1b[31mBienvenue sur le terminal YRexpert !\x1b[m\r\n');
 
 	      socket.on('data', function(data) {
 		console.log("received " + JSON.stringify(data));
@@ -138,7 +140,7 @@ le fichier de démarrage `yexpert-termStart.js`.
 * Push(er) la branche (git push origin ma-branche)
 * Créer une demande d'évolution (utiliser Pull Requests)
 
-Pour remonter un bug : [https://github.com/Yrelay/Yexpert-Term/issues](https://github.com/Yrelay/Yexpert-Term/issues)
+Pour remonter un bug : [https://github.com/yrelay/yrexpert-term/issues](https://github.com/yrelay/yrexpert-term/issues)
 
 ## 6. Liens
 
@@ -147,6 +149,8 @@ Pour remonter un bug : [https://github.com/Yrelay/Yexpert-Term/issues](https://g
 * Yrelay Github : [https://github.com/Yrelay/](https://github.com/Yrelay/)
 
 
+[downloads-image]: https://img.shields.io/npm/dm/yrexpert-term.svg
+[downloads-url]: https://npmjs.org/package/yrexpert-term
 
 
 
