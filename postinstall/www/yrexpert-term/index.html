@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//FR"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 <head>
@@ -16,7 +16,7 @@
   }
 
   .terminal {
-    //float: left;
+    //float: none;
     margin-left: auto;
     margin-right: auto;
     border: #000 solid 5px;
@@ -54,7 +54,7 @@
       });
 
       term.on('data', function(data) {
-        if (data === '£') data = '#';
+        if (data === 'Â£') data = '#';
         console.log("sending " + JSON.stringify(data));
         socket.emit('data', data);
       });
@@ -65,7 +65,7 @@
 
       term.open(document.body);
 
-      term.write('\x1b[31mBienvenue sur le terminal YRexpert !\x1b[m\r\n');
+      term.write('\x1b[31mBienvenue sur le terminal YRExpert !\x1b[m\r\n');
 
       socket.on('data', function(data) {
         console.log("received " + JSON.stringify(data));
