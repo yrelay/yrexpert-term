@@ -1,7 +1,7 @@
 {
   "name": "yrexpert-term",
   "description": "Terminal mode navigateur pour yrexpert-js...",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": {
     "name": "Yrelay",
     "email": "info@yrelay.fr"
